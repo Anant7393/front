@@ -1,0 +1,71 @@
+.click {
+    /* width: 320px; */
+    color: white;
+    background-color: #034ba9;
+    border: none;
+    /* padding: 10px */
+}
+
+.content {
+    width: 320px;
+    color: white;
+    background-color: #034ba9;
+    padding: 10px
+}
+
+.profile {
+    margin: 2rem;
+    width: 320px;
+    color: white;
+    background-color: #034ba9;
+    padding: 10px
+}
+
+.bio {
+    width: 160px;
+    color: white;
+    background-color: #034ba9;
+    padding: 10px;
+    margin-left: 2rem;
+    border: none;
+}
+
+.biotype {
+    font-size: 24px;
+    width: 280px;
+    padding: 10px;
+}
+
+.weig {
+    font-size: 24px;
+    width: 180px;
+    padding: 10px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    padding: 1rem;
+    margin: .5rem;
+    margin-top: 2rem;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 65vw 34vw;
+}
+
+.right {
+    text-align: left;
+}
+
+.left img {
+    width: 82%;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+.form {
+    margin-left: -.45rem;
+}
