@@ -1,3 +1,3 @@
 //let url = 'https://onerecruit.herokuapp.com';
-let url = 'http://localhost:8000';
+let url = 'https://cryptic-badlands-27446.herokuapp.com/ ';
 module.exports = { url };
