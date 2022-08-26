@@ -1,6 +1,6 @@
 import React from 'react'
 import './Nodalcenter.css'
-import { Link } from 'react-router-dom';
+
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch,useSelector } from 'react-redux';
@@ -10,7 +10,7 @@ function Nodalcenter() {
     let navigate = useNavigate();
     let dispatch = useDispatch();
     const allUsers = useSelector((state)=>state.AllUsers.allUsers);
-    const farmerDetails = useSelector((state)=>state.FarmerDetails?state.FarmerDetails.farmerDetails:"");
+   // const farmerDetails = useSelector((state)=>state.FarmerDetails?state.FarmerDetails.farmerDetails:"");
 
     const getData = async()=>{
 
@@ -21,18 +21,20 @@ function Nodalcenter() {
         .catch(function(error){
          console.log(error)
         })
-    }
+        console.log(farmers)
+     }
 
     const getFarmer = async (id)=>{
      const response = await axios.get(`http://localhost:9000/api/auth/users/${id}`);
      console.log(response)
+     console.log(getFarmer)
     }
 
     useEffect(()=>{
         
        getData();
         
-    },[])
+    },[getData])
 
     
 
@@ -46,7 +48,7 @@ function Nodalcenter() {
                    {/* <button onClick={()=>getFarmer(farmer._id)}>View</button> */}
                    <button className="click" onClick={()=>{dispatch(FarmerDetails(farmer));console.log("aaa",farmer);navigate('/farmer')}}>View</button>
                     <div>{farmer.name}</div>
-                    <div>{farmer.email}</div>
+                    <div>{farmer.email}</div> console.log(FarmerDetails)
                     {/* <button onClick={()=>{console.log(farmerDetails?farmerDetails:"j")}}>click</button> */}
                         
                     {/* <div className = "right">
@@ -54,6 +56,7 @@ function Nodalcenter() {
                         
                          </div> */}
                 </div>
+              
             )
         })
       }

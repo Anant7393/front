@@ -6,7 +6,7 @@ import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import Nodalcenter from '../nodalcenter/Nodalcenter';
-import Navbarnew from '../navbarnew/Navbar';
+//import Navbarnew from '../navbarnew/Navbar';
 // import { elements } from '../links/links';
 // import axios from 'axios';
 

@@ -1,9 +1,9 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import "./Nodalcenter.css"
 import img from '../assets/gif.gif'
-import Navbarnew from '../navbarnew/Navbar';
+
 //import {Link} from 'react-router-dom';
 //import ScriptTag from 'react-script-tag';
 
@@ -31,10 +31,10 @@ const Farmer = () => {
     }
     console.log(weight)
     let ammount;
-    if (biomass == "sugarcane") {
+    if (biomass === "sugarcane") {
         ammount = weight * 110
     }
-    if (biomass == "pitari") {
+    if (biomass === "pitari") {
         ammount = weight * 100
     }
     console.log(ammount)
@@ -58,7 +58,7 @@ const Farmer = () => {
 
                 </div>
               &nbsp;&nbsp;  <h4>Ammount Will be : <h3>{ammount}</h3> </h4>
-                <iframe src="https://jazzy-shortbread-a332c3.netlify.app/" height="600px" />
+                <iframe src="https://jazzy-shortbread-a332c3.netlify.app/" height="600px" title='hj'/>
           {/* <div className='payment'>
 
           <h4>Click Here to Pay Ammount</h4><scriptTag src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_GXYBw2oLsb2luo" async> </scriptTag> <h3>&copy;{farmerDetails.name}</h3>

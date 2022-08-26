@@ -5,7 +5,7 @@ import './Navbar.css';
 import logo from '../assets/logo.png';
 
 function Navbarnew() {
-  let navigate = useNavigate();
+ // let navigate = useNavigate();
   return (
     <div>
       <div className="navbar">
