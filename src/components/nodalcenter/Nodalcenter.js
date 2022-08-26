@@ -5,6 +5,7 @@ import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch,useSelector } from 'react-redux';
 import { AllUsers,FarmerDetails } from '../../actions';
+import {url} from '../../utilities';
 import axios from 'axios';
 function Nodalcenter() {
     let navigate = useNavigate();
@@ -14,7 +15,7 @@ function Nodalcenter() {
 
     const getData = async()=>{
 
-        const farmers =await axios.get('/api/auth/getAll').then(function(response) {
+        const farmers =await axios.get(`${url}/api/auth/getAll`).then(function(response) {
          console.log(response);
          dispatch(AllUsers(response.data));
         })
@@ -25,7 +26,7 @@ function Nodalcenter() {
      }
 
     const getFarmer = async (id)=>{
-     const response = await axios.get(`http://localhost:9000/api/auth/users/${id}`);
+     const response = await axios.get(`${url}/api/auth/users/${id}`);
      console.log(response)
      
     }
