@@ -6,7 +6,7 @@ import './App.css';
 import Register from './components/register/Register';
 //import Create from './components/QuizComponents/CreateQuestions/Create';
 import HomePage from './components/homepage/HomePage';
-import Login from './components/login/Login';
+// import Login from './components/login/Login';
 import AdditionalDetails from './components/register/AdditionalDetails';
 import Farmer from './components/nodalcenter/Farmer';
 // import Payment from './components/nodalcenter/Payment';
@@ -17,7 +17,7 @@ function App() {
     <div className='App'>
       <Routes>
         <Route path='/' element={<HomePage />}></Route>
-        <Route path='/login' element={<Login />}></Route>
+        {/* <Route path='/login' element={<Login />}></Route> */}
         <Route path='/register' element={<Register />}></Route>
         <Route path='/myprofile' element={<AdditionalDetails />}></Route>
         <Route path='/farmer' element={<Farmer />}></Route>

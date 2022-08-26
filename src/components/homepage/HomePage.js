@@ -48,30 +48,31 @@ const HomePage = () => {
     <div>
       <Navbar
         element={
-          <Link
-            className={`mx-2 text-dark text-decoration-none btn border-dark bg-none`}
-            to='/login'
-          >
-            Login
-          </Link>
+          // <Link
+          //   className={`mx-2 text-dark text-decoration-none btn border-dark bg-none`}
+          //   to='/login'
+          // >
+          //   Login
+          // </Link>
+          <Link to="/register" className="btn btn-primary">Farmer Registration</Link>
         }
       />
 {/* <Navbarnew/> */}
-
+{/* <Link to="/register" className="btn btn-primary">Farmer Registration</Link> */}
       <div
         className={`container my-4 ${styles.homeContainer} d-flex flex-column align-items-center`}
       >
         <div className={`h1 ${styles.heading} text-center`}>
-          Register to this <br></br> biofuels supply chain site.
+          Register a farmer
         </div>
-        <div
+        {/* <div
           className={`${
             (styles.lightText, styles.extraText)
           } text-center m-2 mb-4`}
         >
           Made with ❤ 404 solvers
-        </div>
-        <div className='d-flex justify-content center'>
+        </div> */}
+        {/* <div className='d-flex justify-content center'>
           <div className='m-2'>
             <Link to='/login'>Login</Link>
           </div>
@@ -81,16 +82,8 @@ const HomePage = () => {
           <div className='m-2'>
             <Link to='/myprofile'>Profile</Link>
           </div>
-          {/* <div className='m-2'>
-            <Link to='/quiz'>Quiz</Link>
-          </div>
-          <div className='m-2'>
-            <Link to='/create'>Create Quiz</Link>
-          </div> */}
-          {/* <div className='m-2'>
-            <button onClick={logout}>Logout</button>
-          </div> */}
-        </div>
+         
+        </div> */}
         <div
           className={`d-flex justify-content-center w-50 ${styles.btnContainer}`}
         >
