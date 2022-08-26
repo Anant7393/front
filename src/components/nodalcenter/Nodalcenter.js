@@ -24,7 +24,7 @@ function Nodalcenter() {
         })
         console.log(farmers)
      }
-
+     console.log(FarmerDetails)
     const getFarmer = async (id)=>{
      const response = await axios.get(`${url}/api/auth/users/${id}`);
      console.log(response)
@@ -49,7 +49,7 @@ function Nodalcenter() {
                    {/* <button onClick={()=>getFarmer(farmer._id)}>View</button> */}
                    <button className="click" onClick={()=>{dispatch(FarmerDetails(farmer));console.log("aaa",farmer);navigate('/farmer')}}>View</button>
                     <div>{farmer.name}</div>
-                    <div>{farmer.email}</div> console.log(FarmerDetails)
+                    <div>{farmer.email}</div> 
                     {/* <button onClick={()=>{console.log(farmerDetails?farmerDetails:"j")}}>click</button> */}
                         
                     {/* <div className = "right">
