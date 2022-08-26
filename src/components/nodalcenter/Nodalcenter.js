@@ -27,14 +27,14 @@ function Nodalcenter() {
     const getFarmer = async (id)=>{
      const response = await axios.get(`http://localhost:9000/api/auth/users/${id}`);
      console.log(response)
-     console.log(getFarmer)
+     
     }
-
+    console.log(getFarmer)
     useEffect(()=>{
         
        getData();
         
-    },[getData])
+    },[allUsers])
 
     
 
